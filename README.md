@@ -12,7 +12,7 @@ Requires
 Usage
 -----
 
-Load data from [SPOT API](http://faq.findmespot.com/index.php?action=showEntry&data=69):
+Load data from [SPOT API](http://faq.findmespot.com/index.php?action=showEntry&data=69) (last 50 messages):
 ```JavaScript
 L.spotTracker('your_feed_id').addTo(map);
 ```
