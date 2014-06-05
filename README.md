@@ -29,19 +29,19 @@ L.spotTracker('your_feed_id', {
 Options
 -------
 
-| Option       | Type    | Default                                                                                             | Description |
-| ------------ | ------- | --------------------------------------------------------------------------------------------------- | ----------- |
-| api          | String  | 'https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/'                       |             |
-| url          | String  | '{api}{feed}/message.json'                                                                          |             |
-| live         | Boolean | true                                                                                                |             |
-| liveUrl      | String  | '{api}{feed}/message.json?startDate={startDate}'                                                    |             |
-| liveInterval | Number  | 10                                                                                                  |             |
-| liveMarker   | Object  | { radius: 5, color: 'orange', fillColor: '#333', fillOpacity: 1, className: 'leaflet-marker-live' } |             |
-| fitBounds    | Boolean | true                                                                                                |             |
-| focus        | Number  | false                                                                                               |             |
-| marker       | Object  | { radius: 5, color: '#333', fillOpacity: 1, stroke: false }                                         |             |
-| line         | Object  | { color: '#333', weight: 3, dashArray: '5,5' }                                                      |             |
-| show         | Object  | { 'UNLIMITED-TRACK': 12, 'OK': 14, 'CUSTOM': 14 }                                                   |             |
+| Option       | Type           | Default                                                                                             | Description                                    |
+| ------------ | -------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| api          | String         | 'https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/'                       | Data API.                                      |
+| url          | String         | '{api}{feed}/message.json'                                                                          | URL to data feed.                              |
+| live         | Boolean        | true                                                                                                | Allow live updates.                            |
+| liveUrl      | String         | '{api}{feed}/message.json?startDate={startDate}'                                                    | URL to update feed.                            |
+| liveInterval | Number         | 10                                                                                                  | Time between each update in minutes.           |
+| liveMarker   | Object         | { radius: 5, color: 'orange', fillColor: '#333', fillOpacity: 1, className: 'leaflet-marker-live' } | Live marker styles.                            |
+| fitBounds    | Boolean        | true                                                                                                | Zoom the map to data bounds.                   |
+| focus        | Boolean/Number | false                                                                                               | Zoom value. Focus and zoom map to live marker. |
+| marker       | Object         | { radius: 5, color: '#333', fillOpacity: 1, stroke: false }                                         | Marker style.                                  |
+| line         | Object         | { color: '#333', weight: 3, dashArray: '5,5' }                                                      | Line style.                                    |
+| show         | Object         | { 'UNLIMITED-TRACK': 12, 'OK': 14, 'CUSTOM': 14 }                                                   | When to show message types (zoom value).       |
 
 
 CSS
