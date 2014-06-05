@@ -6,11 +6,11 @@ Real-time tracking from your SPOT unit.
 Usage
 -----
 
-'''JavaScript
+```JavaScript
 L.spotTracker('your_feed_id').addTo(map);
-'''
+```
 
-'''JavaScript
+```JavaScript
 L.spotTracker('your_feed_id', {
 	api: 'http://turban.cartodb.com/api/v2/sql',
 	url: "{api}?q=SELECT * FROM spot WHERE feed_id='{feed}' ORDER BY timestamp",
@@ -27,4 +27,4 @@ L.spotTracker('your_feed_id', {
 		console.log("click", evt);
 	}			
 }).addTo(map);
-'''
+```
