@@ -31,17 +31,17 @@ Options
 
 | Option       | Type    | Default                                                                                             | Description |
 | ------------ | ------- | --------------------------------------------------------------------------------------------------- | ----------- |
-| api          | String  | 'https://api.findmespot.com/.../feed/'                                                              |             |
+| api          | String  | 'https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/'                       |             |
 | url          | String  | '{api}{feed}/message.json'                                                                          |             |
 | live         | Boolean | true                                                                                                |             |
 | liveUrl      | String  | '{api}{feed}/message.json?startDate={startDate}'                                                    |             |
 | liveInterval | Number  | 10                                                                                                  |             |
 | liveMarker   | Object  | { radius: 5, color: 'orange', fillColor: '#333', fillOpacity: 1, className: 'leaflet-marker-live' } |             |
-| fitBounds    | Boolean |                                                                                                     |             |
-| focus        | Number  |                                                                                                     |             |
-| marker       | Object  |                                                                                                     |             |
-| line         | Object  |                                                                                                     |             |
-| show         | Object  |                                                                                                     |             |
+| fitBounds    | Boolean | true                                                                                                |             |
+| focus        | Number  | false                                                                                               |             |
+| marker       | Object  | { radius: 5, color: '#333', fillOpacity: 1, stroke: false }                                         |             |
+| line         | Object  | { color: '#333', weight: 3, dashArray: '5,5' }                                                      |             |
+| show         | Object  | { 'UNLIMITED-TRACK': 12, 'OK': 14, 'CUSTOM': 14 }                                                   |             |
 
 
 CSS
