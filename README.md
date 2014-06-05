@@ -29,19 +29,19 @@ L.spotTracker('your_feed_id', {
 Options
 -------
 
-| Option       | Type    | Default | Description |
-| ------------ | ------- | ------- | ----------- |
-| api          | String  |         |             |
-| url          | String  |         |             |
-| live         | Boolean | true    |             |
-| liveUrl      | String  |         |             |
-| liveInterval | Number  |         |             |
-| liveMarker   | Object  |         |             |
-| fitBounds    | Boolean |         |             |
-| focus        | Number  |         |             |
-| marker       | Object  |         |             |
-| line         | Object  |         |             |
-| show         | Object  |         |             |   
+| Option       | Type    | Default                                                                                             | Description |
+| ------------ | ------- | --------------------------------------------------------------------------------------------------- | ----------- |
+| api          | String  | 'https://api.findmespot.com/.../feed/'                                                              |             |
+| url          | String  | '{api}{feed}/message.json'                                                                          |             |
+| live         | Boolean | true                                                                                                |             |
+| liveUrl      | String  | '{api}{feed}/message.json?startDate={startDate}'                                                    |             |
+| liveInterval | Number  | 10                                                                                                  |             |
+| liveMarker   | Object  | { radius: 5, color: 'orange', fillColor: '#333', fillOpacity: 1, className: 'leaflet-marker-live' } |             |
+| fitBounds    | Boolean |                                                                                                     |             |
+| focus        | Number  |                                                                                                     |             |
+| marker       | Object  |                                                                                                     |             |
+| line         | Object  |                                                                                                     |             |
+| show         | Object  |                                                                                                     |             |
 
 
 CSS
