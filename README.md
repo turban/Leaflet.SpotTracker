@@ -6,6 +6,7 @@ Real-time tracking from your SPOT unit.
 Usage
 -----
 
+Load data from [SPOT API](http://faq.findmespot.com/index.php?action=showEntry&data=69):
 ```JavaScript
 L.spotTracker('your_feed_id').addTo(map);
 ```
