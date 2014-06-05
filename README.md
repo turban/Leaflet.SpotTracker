@@ -19,3 +19,21 @@ L.spotTracker('your_feed_id', {
 	liveUrl: "{api}?q=SELECT * FROM spot WHERE feed_id='{feed}' AND timestamp > {timestamp} ORDER BY timestamp"
 }).addTo(map);
 ```
+
+Live marker CSS:
+```CSS
+.leaflet-marker-live {
+	-webkit-animation: pulse 2s ease-out;
+	animation: pulse 2s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+	from { stroke-width: 15; stroke-opacity: 1; }
+	to { stroke-width: 50; stroke-opacity: 0; }
+}
+@keyframes pulse {
+	from { stroke-width: 15; stroke-opacity: 1; }
+	to { stroke-width: 50; stroke-opacity: 0; }
+}
+```
