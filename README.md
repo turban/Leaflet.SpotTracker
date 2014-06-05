@@ -29,11 +29,20 @@ L.spotTracker('your_feed_id', {
 Options
 -------
 
-| Option        | Type          | Default | Description |
-| ------------- | ------------- | ------- | ----------- |
-| api           | String        |         |             |
-| url           | String        |         |             |
-| live          | Boolean       | true    |             |
+| Option       | Type    | Default | Description |
+| ------------ | ------- | ------- | ----------- |
+| api          | String  |         |             |
+| url          | String  |         |             |
+| live         | Boolean | true    |             |
+| liveUrl      | String  |         |             |
+| liveInterval | Number  |         |             |
+| liveMarker   | Object  |         |             |
+| fitBounds    | Boolean |         |             |
+| focus        | Number  |         |             |
+| marker       | Object  |         |             |
+| line         | Object  |         |             |
+| show         | Object  |         |             |   
+
 
 CSS
 ---

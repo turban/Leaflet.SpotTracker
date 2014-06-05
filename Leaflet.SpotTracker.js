@@ -5,6 +5,13 @@ L.SpotTracker = L.LayerGroup.extend({
 		live: true,
 		liveUrl: '{api}{feed}/message.json?startDate={startDate}',
 		liveInterval: 10, // minutes
+		liveMarker: {
+			radius: 5,
+			color: 'orange',
+			fillColor: '#333',
+			fillOpacity: 1,
+			className: 'leaflet-marker-live'			
+		},
 		fitBounds: true,
 		focus: false,
 		marker: {
@@ -13,14 +20,7 @@ L.SpotTracker = L.LayerGroup.extend({
 			fillOpacity: 1,
 			stroke: false
 		},		
-		liveMarker: {
-			radius: 5,
-			color: 'orange',
-			fillColor: '#333',
-			fillOpacity: 1,
-			className: 'leaflet-marker-live'			
-		},
-		lineStyle: {
+		line: {
 			color: '#333', 
 			weight: 3, 
 			dashArray: '5,5'
@@ -38,7 +38,7 @@ L.SpotTracker = L.LayerGroup.extend({
 		L.setOptions(this, options);
 
 		this.markers = {};
-		this.polyline = L.polyline([], this.options.lineStyle);
+		this.polyline = L.polyline([], this.options.line);
 		L.LayerGroup.prototype.initialize.call(this);
 	},
 
