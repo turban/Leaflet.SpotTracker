@@ -3,6 +3,11 @@ Leaflet.SpotTracker
 
 Real-time tracking from your SPOT unit.
 
+Requires
+--------
+[Leaflet](http://leafletjs.com/)
+[reqwest](https://github.com/ded/reqwest)
+
 Usage
 -----
 
