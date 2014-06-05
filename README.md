@@ -35,10 +35,10 @@ Options
 | url          | String         | '{api}{feed}/message.json'                                                                          | URL to data feed.                              |
 | live         | Boolean        | true                                                                                                | Allow live updates.                            |
 | liveUrl      | String         | '{api}{feed}/message.json?startDate={startDate}'                                                    | URL to update feed.                            |
-| liveInterval | Number         | 10                                                                                                  | Time between each update in minutes.           |
-| liveMarker   | Object         | { radius: 5, color: 'orange', fillColor: '#333', fillOpacity: 1, className: 'leaflet-marker-live' } | Live marker styles.                            |
+| liveInterval | Number         | 10                                                                                                  | Time between each live update in minutes.      |
+| liveMarker   | Object         | { radius: 5, color: 'orange', fillColor: '#333', fillOpacity: 1, className: 'leaflet-marker-live' } | Live marker style.                             |
+| focus        | Boolean/Number | false                                                                                               | Add zoom value to focus map to last position.  |
 | fitBounds    | Boolean        | true                                                                                                | Zoom the map to data bounds.                   |
-| focus        | Boolean/Number | false                                                                                               | Zoom value. Focus and zoom map to live marker. |
 | marker       | Object         | { radius: 5, color: '#333', fillOpacity: 1, stroke: false }                                         | Marker style.                                  |
 | line         | Object         | { color: '#333', weight: 3, dashArray: '5,5' }                                                      | Line style.                                    |
 | show         | Object         | { 'UNLIMITED-TRACK': 12, 'OK': 14, 'CUSTOM': 14 }                                                   | When to show message types (zoom value).       |
