@@ -31,9 +31,9 @@ Options
 
 | Option        | Type          | Default | Description |
 | ------------- | ------------- | ------- | ----------- |
-|               |               |         |             |
-|               |               |         |             |
-|               |               |         |             |
+| api           | String        |         |             |
+| url           | String        |         |             |
+| live          | Boolean       | true    |             |
 
 CSS
 ---
