@@ -12,8 +12,8 @@ L.SpotTracker = L.LayerGroup.extend({
 			fillOpacity: 1,
 			className: 'leaflet-marker-live'			
 		},
-		fitBounds: true,
 		focus: false,
+		fitBounds: true,
 		marker: {
 			radius: 5,
 			color: '#333',
